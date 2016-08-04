@@ -1,0 +1,23 @@
+{
+  "name": "podcards",
+  "version": "1.0.0",
+  "description": "Guardian Podcards ========================",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node scripts/compile.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guardian/podcards.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guardian/podcards/issues"
+  },
+  "homepage": "https://github.com/guardian/podcards#readme",
+  "devDependencies": {
+    "handlebars": "^4.0.5",
+    "mkpath": "^1.0.0"
+  }
+}

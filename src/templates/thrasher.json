@@ -1,0 +1,8 @@
+{
+  "html": "{{ html }}",
+  "previous": "",
+  "refreshStatus": true
+  "url": "{{ url }}",
+  "headline": "{{ title }}",
+  "trailText": "{{ description }}"
+}

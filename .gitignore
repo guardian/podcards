@@ -1,0 +1,4 @@
+.DS_Store
+aws-keys.json
+build
+node_modules
