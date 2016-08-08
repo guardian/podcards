@@ -1,4 +1,4 @@
-// requirements
+// dependancies
 var handlebars = require('handlebars');
 var fs = require('fs');
 var mkpath = require('mkpath');
@@ -21,7 +21,7 @@ function generateThrasherCode(data) {
     var jsonTemplate = handlebars.compile(thrasherJson);
     var json = jsonTemplate(data);
 
-    var path = 'build/thrashers/' + data.title;
+    var path = 'build/thrashers/' + data.handle;
     mkpath(path, function() {
         fs.writeFile(path + '/source.json', json);
     });

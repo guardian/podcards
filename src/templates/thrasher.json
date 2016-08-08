@@ -1,7 +1,7 @@
 {
   "html": {{{ html }}},
   "previous": "",
-  "refreshStatus": true
+  "refreshStatus": true,
   "url": "{{ url }}",
   "headline": "{{ title }}",
   "trailText": "{{ description }}"
