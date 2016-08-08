@@ -7,7 +7,7 @@
     "compile": "node scripts/compile.js",
     "paths": "node scripts/paths.js",
     "serve": "node scripts/serve.js",
-    "prewatch": "node scripts/compile.js",
+    "prewatch": "sass --update src/templates/:src/templates/ && node scripts/compile.js",
     "watch": "node scripts/watch.js"
   },
   "repository": {
@@ -24,6 +24,7 @@
     "colors": "^1.1.2",
     "handlebars": "^4.0.5",
     "mkpath": "^1.0.0",
+    "mq-sass": "^0.6.0",
     "node-cmd": "^1.1.1",
     "node-static": "^0.7.8",
     "node-watch": "^0.4.0",

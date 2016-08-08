@@ -1,0 +1,16 @@
+@import "../../node_modules/mq-sass/stylesheets/mq-sass";
+
+// Default breakpoints from Frontend
+$mq-breakpoints: (
+    mobile:          320px,
+    mobileLandscape: 480px,
+    phablet:         660px,
+    tablet:          740px,
+    desktop:         980px,
+    leftCol:         1140px,
+    wide:            1300px
+);
+
+body {
+    background-color: red;
+}

@@ -5,6 +5,7 @@ var mkpath = require('mkpath');
 
 // templates
 var thrasherHtml = fs.readFileSync('src/templates/thrasher.html', 'utf8');
+var thrasherCss = fs.readFileSync('src/templates/thrasher.css', 'utf8');
 var thrasherJson = fs.readFileSync('src/templates/thrasher.json', 'utf8');
 
 // data
@@ -16,6 +17,7 @@ for (var i = 0; i < podcasts.length; i++) {
 
 function generateThrasherCode(data) {
     var htmlTemplate = handlebars.compile(thrasherHtml);
+        data.css = thrasherCss;
         data.html = JSON.stringify(htmlTemplate(data), null);
 
     var jsonTemplate = handlebars.compile(thrasherJson);

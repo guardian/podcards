@@ -1,7 +1,25 @@
-<style>
-#{{ handle }} {
-    background-color: {{ backgroundColor }};
-}
-</style>
-
-<h1>{{ title }}</h1> 
+<div class="{{ handle }}__wrapper">
+    <style>
+        #{{ handle }},
+        #{{ handle }} .fc-item {
+            background-color: {{ backgroundColor }};
+        }
+        .{{ handle }}__description {
+            color: {{ accentColour }};
+        }
+        {{{ css }}}
+    </style>
+    <div class="{{ handle }}__content">
+        <p class="{{ handle }}__description">{{ description }}</p>
+        <h1 class="{{ handle }}__title">{{ title }}</h1>
+        <ul class="{{ handle }}__buttons">
+            {{#each subscribe}}
+                <li class="{{ handle }}__button {{ handle }}__button--{{ @key }}">
+                    <a href="{{ this }}">
+                        {{ @key }}
+                    </a>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
