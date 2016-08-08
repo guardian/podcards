@@ -5,12 +5,12 @@
         "shortDescription": "Reports from the feminist front line",
         "url": "https://www.theguardian.com/commentisfree/audio/2016/jul/23/feminism-sexual-violence-brock-turner-valenti-mtv",
         "subscribe": {
-            "itunes": "https://itunes.apple.com/us/podcast/what-would-a-feminist-do/id1094777126?mt=2",
-            "stitcher": "http://www.stitcher.com/podcast/guardianuk/what-would-a-feminist-do",
-            "soundcloud": "https://soundcloud.com/the_guardians_what_would_a_feminist_do",
-            "rss": "https://www.theguardian.com/commentisfree/series/what-would-a-feminist-do/podcast.xml"
+            "iTunes": "https://itunes.apple.com/us/podcast/what-would-a-feminist-do/id1094777126?mt=2",
+            "Stitcher": "http://www.stitcher.com/podcast/guardianuk/what-would-a-feminist-do",
+            "Soundcloud": "https://soundcloud.com/the_guardians_what_would_a_feminist_do",
+            "RSS Feed": "https://www.theguardian.com/commentisfree/series/what-would-a-feminist-do/podcast.xml"
         },
-        "backgroundColor": "#0e3361",
+        "backgroundColor": "#104274",
         "accentColour": "#aad8f1",
         "illustration": "what-would-a-feminist-do.svg",
         "handle": "what-would-a-feminist-do"

@@ -11,6 +11,125 @@ $mq-breakpoints: (
     wide:            1300px
 );
 
-body {
-    background-color: red;
+// thrasher specific code
+// 'handle' gets replaced by whatever podcast handle is set in podcast.json
+#handle {
+    padding-top: 0;
+    margin-bottom: 0;
+
+    & + .fc-container {
+        display: none;
+    }
+}
+
+.handle__wrapper {
+    width: 100%;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: contain;
+    height: 250px;
+    padding: 0 10px;
+
+    @include mq(mobileLandscape) {
+        padding: 0 20px;
+    }
+}
+
+.handle__logo {
+    width: 145px;
+
+    @include mq(leftCol) {
+        position: absolute;
+        top: 7px;
+        left: 20px;
+    }
+}
+
+.handle__content {
+    @include mq(leftCol) {
+        margin-left: 160px;
+    }
+
+    @include mq(wide) {
+        margin-left: 240px;
+    }
+}
+
+.handle__description,
+.handle__title {
+    max-width: 460px;
+    font-family: "Guardian Egyptian Web","Guardian Text Egyptian Web",Georgia,serif;
+}
+
+.handle__description {
+    margin-top: 6px;
+    margin-bottom: 2px;
+    line-height: 1.3;
+}
+
+.handle__title {
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 1;
+}
+
+.handle__button-label {
+    margin-top: 8px;
+}
+
+.handle__buttons {
+    position: absolute;
+    bottom: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
+    font-size: 14px;
+    line-height: 1;
+
+    & > * {
+        float: left;
+        margin-right: 4px;
+    }
+}
+
+.handle__button {
+    background-color: #fb0;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.handle__link:hover {
+    text-decoration: none;
+
+    .handle__button {
+        background-color: darken(#fb0, 5%);
+    }
+}
+
+// light touch page modding
+.fc-container__title__text {
+    color: #333;
+}
+
+.fc-container .fc-container__inner {
+    border-top-color: #fb0;
+}
+
+.button--show-more {
+    background-color: #fb0;
+    border-color: #fb0;
+    color: #333;
+
+    &:hover {
+        border-color: darken(#fb0, 5%);
+        background-color: darken(#fb0, 5%);
+    }
+
+    .inline-icon {
+        fill: #333;
+    }
 }

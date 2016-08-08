@@ -25,6 +25,7 @@
     "handlebars": "^4.0.5",
     "mkpath": "^1.0.0",
     "mq-sass": "^0.6.0",
+    "ncp": "^2.0.0",
     "node-cmd": "^1.1.1",
     "node-static": "^0.7.8",
     "node-watch": "^0.4.0",
