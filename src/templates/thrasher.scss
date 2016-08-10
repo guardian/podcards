@@ -16,10 +16,6 @@ $mq-breakpoints: (
 #handle {
     padding-top: 0;
     margin-bottom: 0;
-
-    & + .fc-container {
-        display: none;
-    }
 }
 
 .handle__wrapper {

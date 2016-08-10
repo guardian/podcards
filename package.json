@@ -4,10 +4,12 @@
   "description": "Guardian Podcards ========================",
   "main": "index.js",
   "scripts": {
+    "sass": "sass --update src/templates/:src/templates/",
+    "precompile": "npm run sass",
     "compile": "node scripts/compile.js",
     "paths": "node scripts/paths.js",
     "serve": "node scripts/serve.js",
-    "prewatch": "sass --update src/templates/:src/templates/ && node scripts/compile.js",
+    "prewatch": "npm run sass && node scripts/compile.js",
     "watch": "node scripts/watch.js"
   },
   "repository": {

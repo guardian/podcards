@@ -8,16 +8,19 @@ var ncp = require('ncp').ncp;
 var thrasherHtml = fs.readFileSync('src/templates/thrasher.html', 'utf8');
 var thrasherCss = fs.readFileSync('src/templates/thrasher.css', 'utf8');
 var thrasherJson = fs.readFileSync('src/templates/thrasher.json', 'utf8');
+var snapHtml = fs.readFileSync('src/templates/snap.html', 'utf8');
+var snapCss = fs.readFileSync('src/templates/snap.css', 'utf8');
 
 // data
 var podcasts = require('../src/podcasts.json');
 
 for (var i = 0; i < podcasts.length; i++) {
-    generateThrasherCode(podcasts[i]);
+    generateThrasher(podcasts[i]);
+    generateSnap(podcasts[i]);
     copyIllustrations();
 }
 
-function generateThrasherCode(data) {
+function generateThrasher(data) {
     var htmlTemplate = handlebars.compile(thrasherHtml);
         data.css = thrasherCss.replace(/handle/g, data.handle);
         data.html = JSON.stringify(htmlTemplate(data), null);
@@ -28,6 +31,19 @@ function generateThrasherCode(data) {
     var path = 'build/thrashers/' + data.handle;
     mkpath(path, function() {
         fs.writeFile(path + '/source.json', json);
+    });
+}
+
+function generateSnap(data) {
+    var htmlTemplate = handlebars.compile(snapHtml);
+        data.css = snapCss.replace(/handle/g, data.handle);
+        data.html = JSON.stringify(htmlTemplate(data), null);
+
+    var html = htmlTemplate(data);
+
+    var path = 'build/snap/' + data.handle;
+    mkpath(path, function() {
+        fs.writeFile(path + '/index.html', html);
     });
 }
 
