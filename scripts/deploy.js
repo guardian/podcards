@@ -75,7 +75,7 @@ function uploadNextItem () {
 
 		if ( !inFlight ) {
 			loader.stop();
-			console.log( '\nupload complete! type ' + chalk.cyan( 'npm run open' ) + ' to view the project' );
+			console.log( '\nupload complete!' );
 		}
 
 		return;
