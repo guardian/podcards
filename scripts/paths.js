@@ -15,8 +15,8 @@ for (var i = 0; i < podcasts.length; i++) {
 var selectedPodcast = readlineSync.keyInSelect(arrayOfPodcasts, 'What podcast do ya wanna know about?');
 
 console.log('Thrashers'.rainbow.bold.underline.inverse);
-console.log('Local Url '.bold.yellow + returnPath('local', 'thrashers'));
-console.log('Remote Url '.bold.green + returnPath('remote', 'thrashers'));
+console.log('Local Url '.bold.yellow + returnPath('local', 'thrasher'));
+console.log('Remote Url '.bold.green + returnPath('remote', 'thrasher'));
 
 console.log('\nPodcard'.rainbow.bold.underline.inverse);
 console.log('Local Url '.bold.yellow + returnPath('local', 'snap'));

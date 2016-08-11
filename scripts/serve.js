@@ -1,7 +1,7 @@
 // dependancies
 var static = require('node-static');
 
-console.log("serving");
+var config = require('../scripts/config.json');
 
 var file = new static.Server('./build', {
     'cache': 0,
@@ -12,6 +12,7 @@ var file = new static.Server('./build', {
  
 require('http').createServer(function (request, response) {
     request.addListener('end', function () {
+        console.log("serving");
         file.serve(request, response);
     }).resume();
-}).listen(8080);
+}).listen(config.local.port);

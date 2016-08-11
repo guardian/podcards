@@ -29,7 +29,7 @@ function generateThrasher(data) {
     var jsonTemplate = handlebars.compile(genericJson);
     var json = jsonTemplate(data);
 
-    var path = 'build/thrashers/' + data.handle;
+    var path = 'build/thrasher/' + data.handle;
     mkpath(path, function() {
         fs.writeFile(path + '/source.json', json);
     });
