@@ -1,7 +1,7 @@
 Guardian Podcards
 ========================
 
-A way to autogenerate assets relating to our podcasts
+A way to autogenerate on-site assets for our podcasts
 
 ## Installation
 
