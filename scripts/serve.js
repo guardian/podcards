@@ -9,10 +9,11 @@ var file = new static.Server('./build', {
         'Access-Control-Allow-Origin': '*'
     }
 });
- 
+
+console.log("serving");
+
 require('http').createServer(function (request, response) {
     request.addListener('end', function () {
-        console.log("serving");
         file.serve(request, response);
     }).resume();
 }).listen(config.local.port);
