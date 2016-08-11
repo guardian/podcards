@@ -1,0 +1,88 @@
+@import 'partials/fonts';
+
+body {
+    font-family: 'GuardianEgyptianWeb';
+    font-weight: 400;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 600px;
+}
+
+.handle__card {
+    border-top: 1px solid #fb0;
+    background-color: #333;
+}
+
+.handle__artwork {
+    position: relative;
+    height: 0;
+    padding-top: 100%;
+}
+
+.handle__illustration {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: -35%;
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.handle__content {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    padding-right: 45%;
+}
+
+.handle__description {
+    font-size: 13px;
+    line-height: 1.3;
+    margin: 0;
+}
+
+.handle__title {
+    font-size: 20px;
+    line-height: 1.1;
+    margin: 0;
+    font-weight: 500;
+    margin-top: 2px;
+}
+
+.handle__latest {
+    padding: 6px;
+}
+
+.handle__episode-title {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    -webkit-font-smoothing: antialiased;
+    margin-bottom: 18px;
+}
+
+.handle__label {
+    display: block;
+    color: #fb0;
+}
+
+.handle__button {
+    font-family: 'GuardianSansWeb';
+    color: #fb0;
+    border: 1px solid #fb0;
+    border-radius: 24px;
+    padding: 6px 10px 4px;
+    text-decoration: none;
+    font-size: 13px;
+    margin-bottom: 6px;
+    display: inline-block;
+
+    &:hover {
+        background-color: #fb0;
+        color: #333;
+    }
+}

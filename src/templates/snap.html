@@ -1,13 +1,25 @@
 <div class="{{ handle }}__card">
     <style>
-        {{ css }}
+        .{{ handle }}__artwork {
+            background-color: {{ backgroundColor }};
+        }
+        .{{ handle }}__illustration {
+            background-image: url('http://localhost:8080/illustrations/{{ illustration }}');
+        }
+        .{{ handle }}__description {
+            color: {{ accentColour }};
+        }
+        {{{ css }}}
     </style>
     <div class="{{ handle }}__artwork">
-        <p class="{{ handle }}__description">{{ shortDescription }}</p>
-        <h1 class="{{ handle }}__title">{{ title }}</h1>
+        <div class="{{ handle }}__illustration"></div>
+        <div class="{{ handle }}__content">
+            <p class="{{ handle }}__description">{{ shortDescription }}</p>
+            <h1 class="{{ handle }}__title">{{ title }}</h1>
+        </div>
     </div>
-    <div class="{{ handle }}__content">
-        <p class="{{ handle }}__label">Latest episode</p>
-        <h2 class="{{ handle }}__episode-title">Add the episode title here</h2>
+    <div class="{{ handle }}__latest">
+        <h2 class="{{ handle }}__episode-title"><span class="{{ handle }}__label">Latest episode</span> Add the episode title here</h2>
+        <a class="{{ handle }}__button" href="{{ url }} ">More Episodes</a>
     </div>
 </div>

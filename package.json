@@ -4,7 +4,7 @@
   "description": "Guardian Podcards ========================",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --update src/templates/:src/templates/",
+    "sass": "sass --update src/sass/:build/css/",
     "precompile": "npm run sass",
     "compile": "node scripts/compile.js",
     "paths": "node scripts/paths.js",
