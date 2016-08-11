@@ -1,12 +1,12 @@
 <div class="{{ handle }}__card">
     <style>
-        .{{ handle }}__artwork {
+        .{{ handle }}__card .{{ handle }}__artwork {
             background-color: {{ backgroundColor }};
         }
-        .{{ handle }}__illustration {
+        .{{ handle }}__card .{{ handle }}__illustration {
             background-image: url('http://localhost:8080/illustrations/{{ illustration }}');
         }
-        .{{ handle }}__description {
+        .{{ handle }}__card .{{ handle }}__description {
             color: {{ accentColour }};
         }
         {{{ css }}}

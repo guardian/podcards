@@ -5,9 +5,9 @@ var mkpath = require('mkpath');
 var ncp = require('ncp').ncp;
 
 // templates
+var genericJson = fs.readFileSync('src/templates/html.json', 'utf8');
 var thrasherHtml = fs.readFileSync('src/templates/thrasher.html', 'utf8');
 var thrasherCss = fs.readFileSync('build/css/thrasher.css', 'utf8');
-var thrasherJson = fs.readFileSync('src/templates/thrasher.json', 'utf8');
 var snapHtml = fs.readFileSync('src/templates/snap.html', 'utf8');
 var snapCss = fs.readFileSync('build/css/snap.css', 'utf8');
 
@@ -20,14 +20,13 @@ for (var i = 0; i < podcasts.length; i++) {
 }
 
 copyIllustrations();
-copyFonts();
 
 function generateThrasher(data) {
     var htmlTemplate = handlebars.compile(thrasherHtml);
         data.css = thrasherCss.replace(/handle/g, data.handle);
         data.html = JSON.stringify(htmlTemplate(data), null);
 
-    var jsonTemplate = handlebars.compile(thrasherJson);
+    var jsonTemplate = handlebars.compile(genericJson);
     var json = jsonTemplate(data);
 
     var path = 'build/thrashers/' + data.handle;
@@ -39,22 +38,19 @@ function generateThrasher(data) {
 function generateSnap(data) {
     var htmlTemplate = handlebars.compile(snapHtml);
         data.css = snapCss.replace(/handle/g, data.handle);
-        data.html = htmlTemplate(data), null;
+        data.html = JSON.stringify(htmlTemplate(data), null);
 
-    var html = htmlTemplate(data);
+    var jsonTemplate = handlebars.compile(genericJson);
+    var json = jsonTemplate(data);
 
     var path = 'build/snap/' + data.handle;
     mkpath(path, function() {
-        fs.writeFile(path + '/index.html', html);
+        fs.writeFile(path + '/source.json', json);
     });
 }
 
 function copyIllustrations() {
     copy('src/illustrations', 'build/illustrations', "Illustrations copied"); 
-}
-
-function copyFonts() {
-    copy('src/fonts', 'build/fonts', "Fonts copied");
 }
 
 function copy(location, destination, message) {
