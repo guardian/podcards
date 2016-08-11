@@ -2,8 +2,6 @@
     <style>
         .{{ handle }}__card .{{ handle }}__artwork {
             background-color: {{ backgroundColor }};
-        }
-        .{{ handle }}__card .{{ handle }}__illustration {
             background-image: url('http://localhost:8080/illustrations/{{ illustration }}');
         }
         .{{ handle }}__card .{{ handle }}__description {
@@ -12,7 +10,6 @@
         {{{ css }}}
     </style>
     <div class="{{ handle }}__artwork">
-        <div class="{{ handle }}__illustration"></div>
         <div class="{{ handle }}__content">
             <p class="{{ handle }}__description">{{ shortDescription }}</p>
             <h1 class="{{ handle }}__title">{{ title }}</h1>

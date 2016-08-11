@@ -1,24 +1,28 @@
 // light touch page modding
-.fc-container__title__text,
-.fc-container__header__title {
-    color: #333;
-}
-
-.fc-container .fc-container__inner {
-    border-top-color: #fb0;
-}
-
-.button--show-more {
-    background-color: #fb0;
-    border-color: #fb0;
-    color: #333;
-
-    &:hover {
-        border-color: darken(#fb0, 5%);
-        background-color: darken(#fb0, 5%);
+#latest-podcasts,
+#other-podcasts,
+#podcasts {
+    .fc-container__title__text,
+    .fc-container__header__title {
+        color: #333;
     }
-
-    .inline-icon {
-        fill: #333;
+    
+    .fc-container .fc-container__inner {
+        border-top-color: #fb0;
+    }
+    
+    .button--show-more {
+        background-color: #fb0;
+        border-color: #fb0;
+        color: #333;
+    
+        &:hover {
+            border-color: darken(#fb0, 5%);
+            background-color: darken(#fb0, 5%);
+        }
+    
+        .inline-icon {
+            fill: #333;
+        }
     }
 }

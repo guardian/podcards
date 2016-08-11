@@ -41,13 +41,13 @@
             "soundcloud": "https://soundcloud.com/guardianfootballweekly",
             "rss": "https://www.theguardian.com/football/series/footballweekly/podcast.xml"
         },
-        "backgroundColor": "#a9ca1b",
+        "backgroundColor": "#a7c91a",
         "accentColour": "#333",
-        "illustration": "football-weekly.png",
+        "illustration": "football-weekly.jpg",
         "handle": "football-weekly"
     },
     {
-        "title": "football weekly",
+        "title": "the citadel",
         "description": "Spencer Ackerman and Laura Hudson tackle the conflicts, schemes and themes of Game of Thrones",
         "shortDescription": "Everything Game of Thrones",
         "url": "https://www.theguardian.com/tv-and-radio/audio/2016/jul/04/game-of-thrones-how-did-your-predictions-stack-up-the-citadel-podcast",

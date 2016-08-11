@@ -26,7 +26,7 @@ $mq-breakpoints: (
     .handle__artwork {
         position: relative;
         background-repeat: no-repeat;
-        background-position: right -60px center;
+        background-position: right center;
         background-size: auto 100%;
         min-height: 220px;
         margin: 0 -10px;
@@ -39,7 +39,6 @@ $mq-breakpoints: (
         @include mq(tablet) {
             height: 250px;
             margin: 0;
-            background-position: right center;
         }
     }
 
