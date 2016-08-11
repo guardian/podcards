@@ -16,19 +16,18 @@
         "handle": "what-would-a-feminist-do"
     },
     {
-        "title": "what would a feminist do fake?",
-        "description": "The Guardian's Jessica Valenti brings you interviews, advice and real life stories from the front lines of feminism",
-        "shortDescription": "Reports from the feminist front line",
-        "url": "https://www.theguardian.com/commentisfree/series/what-would-a-feminist-do",
+        "title": "politics for humans",
+        "description": "Politics for humans helps translate headline news into thoughtful, people based conversations",
+        "shortDescription": "Headline news translated for people",
+        "url": "https://www.theguardian.com/politics/series/politics-for-humans",
         "subscribe": {
-            "itunes": "https://itunes.apple.com/us/podcast/what-would-a-feminist-do/id1094777126?mt=2",
-            "stitcher": "http://www.stitcher.com/podcast/guardianuk/what-would-a-feminist-do",
-            "soundcloud": "https://soundcloud.com/the_guardians_what_would_a_feminist_do",
-            "rss": "https://www.theguardian.com/commentisfree/series/what-would-a-feminist-do/podcast.xml"
+            "itunes": "https://itunes.apple.com/us/podcast/politics-for-humans/id1142196506?mt=2",
+            "soundcloud": "https://soundcloud.com/politics-for-humans-guardian-us",
+            "rss": "http://www.theguardian.com/politics/series/politics-for-humans/podcast.xml"
         },
-        "backgroundColor": "#0e3361",
-        "accentColour": "#aad8f1",
-        "illustration": "what-would-a-feminist-do.svg",
-        "handle": "what-would-a-feminist-do-2"
+        "backgroundColor": "#204583",
+        "accentColour": "#e7b3c3",
+        "illustration": "politics-for-humans.svg",
+        "handle": "politics-for-humans"
     }
 ]
