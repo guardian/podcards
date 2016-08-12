@@ -18,6 +18,10 @@ $mq-breakpoints: (
 #handle {
     padding-top: 0;
     margin-bottom: 0;
+
+    .ad-slot {
+        display: none !important;
+    }
 }
 
 .handle__thrasher {

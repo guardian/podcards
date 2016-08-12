@@ -25,21 +25,27 @@
         <a class="{{ handle }}__button" href="{{ url }} ">More Episodes</a>
     </div>
     <script>
-        if (window.XMLHttpRequest) {
-           xhttp = new XMLHttpRequest();
+        if ('{{handle}}' == 'politics-for-humans') {
+            console.log("https fail");
+            var textTitle = 'Russell Simmons talks Black Lives Matter';
         } else {
-           xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            if (window.XMLHttpRequest) {
+               xhttp = new XMLHttpRequest();
+            } else {
+               xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+    
+            xhttp.overrideMimeType('text/xml');
+    
+            xhttp.open("GET", '{{ url }}/rss', false);
+            // xhttp.open("GET", 'http://localhost:8080/rss.xml', false);
+            xhttp.send(null);
+            xmlDoc = xhttp.responseXML;
+    
+            var item = xmlDoc.getElementsByTagName("item")[0];
+            var title = item.getElementsByTagName("title")[0].childNodes[0];
+            var textTitle = title.nodeValue.replace("- podcast", "").replace("– podcast", "").replace(" – the Citadel", "").replace(" podcast", "");
         }
-
-        xhttp.overrideMimeType('text/xml');
-
-        xhttp.open("GET", '{{ url }}/rss', false);
-        // xhttp.open("GET", 'http://localhost:8080/rss.xml', false);
-        xhttp.send(null);
-        xmlDoc = xhttp.responseXML;
-
-        var item = xmlDoc.getElementsByTagName("item")[0];
-        var title = item.getElementsByTagName("title")[0].childNodes[0];
-        document.getElementsByClassName("{{ handle }}__headline")[0].innerHTML = title.nodeValue;
+        document.getElementsByClassName("{{ handle }}__headline")[0].innerHTML = textTitle;
     </script>
 </div>

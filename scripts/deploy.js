@@ -5,7 +5,7 @@ var thingsToUpload = [
 	{
 		files: '**/*',
 		headers: {
-			CacheControl: 'max-age=20'
+			CacheControl: 'max-age=0'
 		}
 	}
 ];

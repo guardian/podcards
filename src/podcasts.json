@@ -19,11 +19,11 @@
         "title": "politics for humans",
         "description": "Politics for humans helps translate headline news into thoughtful, people based conversations",
         "shortDescription": "Headline news translated for people",
-        "url": "http://www.theguardian.com/politics/series/politics-for-humans",
+        "url": "https://www.theguardian.com/politics/series/politics-for-humans",
         "subscribe": {
             "itunes": "https://itunes.apple.com/us/podcast/politics-for-humans/id1142196506?mt=2",
             "soundcloud": "https://soundcloud.com/politics-for-humans-guardian-us",
-            "rss": "http://www.theguardian.com/politics/series/politics-for-humans/podcast.xml"
+            "rss": "https://www.theguardian.com/politics/series/politics-for-humans/podcast.xml"
         },
         "backgroundColor": "#204583",
         "accentColour": "#e7b3c3",
@@ -74,7 +74,7 @@
             "rss": "https://www.theguardian.com/science/series/science/podcast.xml"
         },
         "backgroundColor": "#2274b2",
-        "accentColour": "#c74e44",
+        "accentColour": "#a9d7f0",
         "illustration": "science-weekly.svg",
         "handle": "science-weekly"
     }
