@@ -33,9 +33,22 @@ $mq-breakpoints: (
         background-size: auto 100%;
     }
 
+    .handle__artwork-link {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 10;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .1);
+        }
+    }
+
     .handle__content {
         position: absolute;
-        top: 6px;
+        top: 4px;
         left: 6px;
         padding-right: 45%;
     }
@@ -55,7 +68,20 @@ $mq-breakpoints: (
     }
 
     .handle__latest {
-        padding: 6px;
+        position: relative;
+        padding: 4px 6px;
+    }
+
+    .handle__latest-link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        &:hover {
+            background-color: rgba(0, 0, 0, .1);
+        }
     }
 
     .handle__episode-title {
@@ -73,6 +99,8 @@ $mq-breakpoints: (
     }
 
     .handle__button {
+        position: relative;
+        z-index: 10;
         font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
         color: #fb0;
         border: 1px solid #fb0;

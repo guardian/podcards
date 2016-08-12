@@ -4,7 +4,7 @@
         "port": 8080
     },
     "remote": {
-        "url": "https://interactive.guim.co.uk/",
+        "url": "https://interactive.guim.co.uk",
         "path": "podcards",
         "bucket": "gdn-cdn"
     }
