@@ -1,4 +1,4 @@
-@import "../../node_modules/mq-sass/stylesheets/mq-sass";
+@import "../../node_modules/sass-mq/mq";
 
 @import "partials/page";
 
@@ -109,6 +109,7 @@ $mq-breakpoints: (
         font-weight: 900;
         font-size: 28px;
         line-height: 1;
+        color: white;
 
         @include mq(tablet) {
             font-size: 48px;
