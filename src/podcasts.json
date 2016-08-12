@@ -19,7 +19,7 @@
         "title": "politics for humans",
         "description": "Politics for humans helps translate headline news into thoughtful, people based conversations",
         "shortDescription": "Headline news translated for people",
-        "url": "http://www.theguardian.com/politics/audio/2016/aug/09/russell-simmons-black-lives-matter-clinton-trump-politics-for-humans",
+        "url": "http://www.theguardian.com/politics/series/politics-for-humans",
         "subscribe": {
             "itunes": "https://itunes.apple.com/us/podcast/politics-for-humans/id1142196506?mt=2",
             "soundcloud": "https://soundcloud.com/politics-for-humans-guardian-us",
@@ -50,7 +50,7 @@
         "title": "the citadel",
         "description": "Spencer Ackerman and Laura Hudson tackle the conflicts, schemes and themes of Game of Thrones",
         "shortDescription": "Everything Game of Thrones",
-        "url": "https://www.theguardian.com/tv-and-radio/audio/2016/jul/04/game-of-thrones-how-did-your-predictions-stack-up-the-citadel-podcast",
+        "url": "https://www.theguardian.com/tv-and-radio/series/game-of-thrones-the-citadel-podcast",
         "subscribe": {
             "itunes": "https://itunes.apple.com/us/podcast/the-citadel/id1106867070?mt=2",
             "stitcher": "http://www.stitcher.com/podcast/guardianuk/the-citadel",
@@ -61,5 +61,21 @@
         "accentColour": "#fb0",
         "illustration": "the-citadel.svg",
         "handle": "the-citadel"
+    },
+    {
+        "title": "science weekly",
+        "description": "The best place to learn about the big discoveries and debates in biology, chemisty, physics and sometimes even maths",
+        "shortDescription": "Learn about the big discoveries and debates",
+        "url": "https://www.theguardian.com/science/series/science",
+        "subscribe": {
+            "itunes": "https://itunes.apple.com/podcast/science-weekly/id136697669?mt=2",
+            "stitcher": "http://www.stitcher.com/podcast/guardianuk/science-weekly",
+            "soundcloud": "https://soundcloud.com/guardianscienceweekly",
+            "rss": "https://www.theguardian.com/science/series/science/podcast.xml"
+        },
+        "backgroundColor": "#2274b2",
+        "accentColour": "#c74e44",
+        "illustration": "science-weekly.svg",
+        "handle": "science-weekly"
     }
 ]
