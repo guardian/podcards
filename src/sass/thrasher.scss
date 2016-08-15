@@ -19,7 +19,8 @@ $mq-breakpoints: (
     padding-top: 0;
     margin-bottom: 0;
 
-    .ad-slot {
+    .ad-slot,
+    .ad-slot--paid-for-badge {
         display: none !important;
     }
 }
