@@ -10,6 +10,7 @@ var thrasherHtml = fs.readFileSync('src/templates/thrasher.html', 'utf8');
 var thrasherCss = fs.readFileSync('build/css/thrasher.css', 'utf8');
 var snapHtml = fs.readFileSync('src/templates/snap.html', 'utf8');
 var snapCss = fs.readFileSync('build/css/snap.css', 'utf8');
+var homeHtml = fs.readFileSync('src/templates/index.html', 'utf8');
 
 // data
 var podcasts = require('../src/podcasts.json');
@@ -19,6 +20,7 @@ for (var i = 0; i < podcasts.length; i++) {
     generateSnap(podcasts[i]);
 }
 
+generateHomePage();
 copyIllustrations();
 
 function generateThrasher(data) {
@@ -47,6 +49,12 @@ function generateSnap(data) {
     mkpath(path, function() {
         fs.writeFile(path + '/source.json', json);
     });
+}
+
+function generateHomePage() {
+    var htmlTemplate = handlebars.compile(homeHtml);
+
+    fs.writeFile('build/index.html', htmlTemplate(podcasts));
 }
 
 function copyIllustrations() {

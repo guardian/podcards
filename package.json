@@ -11,7 +11,7 @@
     "serve": "node scripts/serve.js",
     "prewatch": "npm run sass && node scripts/compile.js",
     "watch": "node scripts/watch.js",
-    "predeploy": "node scripts/compile.js",
+    "predeploy": "npm run compile",
     "deploy": "node scripts/deploy.js"
   },
   "repository": {

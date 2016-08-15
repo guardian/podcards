@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang='en-GB'>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1'>
+
+    <title>Podcards</title>
+    <meta name="robots" content="noindex,noarchive">
+
+    <link rel='stylesheet' href='https://interactive.guim.co.uk/gia/fonts/v1/fonts.css'>
+
+    <style>
+        body {
+            font-family: 'Guardian Text Egyptian Web';
+            font-size: 16px;
+            line-height: 1.4;
+            display: block;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a,
+        a:link,
+        a:visited {
+            text-decoration: none;
+            color: #005689;
+            word-break: break-all;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h1, h2, h3, h4, h5, h6, strong, b {
+            font-family: 'Guardian Egyptian Web';
+            margin: 0 0 1em 0;
+        }
+
+        h1 {
+            font-size: 2em;
+            line-height: 1;
+            margin: 0;
+        }
+
+        h2 {
+            font-size: 1.4em;
+            margin-bottom: 0;
+            margin-top: 1em;
+        }
+
+        h2 span {
+            color: #767676;
+        }
+
+        p {
+            font-family: 'Guardian Text Sans Web', Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        header {
+            padding: 1em;
+            border-bottom: 1px solid #eee;
+        }
+
+        main {
+            min-height: calc(100vh - 8.8em);
+            padding: 1em;
+        }
+
+        main::before, main::after {
+            content: '';
+            clear: both;
+        }
+
+        main::after {
+            display: table;
+        }
+
+        footer {
+            text-align: center;
+            border-top: 1px solid #eee;
+            padding: 1em;
+        }
+
+        footer p {
+            line-height: 1;
+            font-size: 0.8em;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Podcards</h1>
+    </header>
+
+    <main>
+        <select onchange="getPathValues()">
+            {{#each this}}
+            <option class="{{ handle }}" value="{{ handle }}" data-url="{{ url }}" data-handle="{{ handle }}" data-description="{{ description }}">{{ title }}</option>
+            {{/each}}
+        </select>
+
+        <h2>Page Header <span>thrasher</span></h2>
+        <a class="thrasher"></a>
+
+        <h2>Podcard <span>snap</span></h2>
+        <a class="snap"></a>
+
+    </main>
+
+    <footer>
+        <p>Contact <a href='mailto:design.team@theguardian.com'>design.team@theguardian.com</a></p>
+    </footer>
+
+    <script type="text/javascript">
+        function getPathValues() {
+            var title = document.getElementsByTagName('select')[0].value;
+            var option = document.getElementsByClassName(title)[0];
+            var data = {
+                'title': title,
+                'url': option.getAttribute('data-url'),
+                'handle': option.getAttribute('data-handle'),
+                'description': option.getAttribute('data-description')
+            };
+
+            insertPath('thrasher', data);
+            insertPath('snap', data);
+        }
+
+        getPathValues();
+
+        function insertPath(type, data) {
+            var path = data.url + '?gu-snapType=json.html&gu-snapUri=' + encodeURIComponent('https://interactive.guim.co.uk/podcards/' + type + "/" + data.handle + '/source.json') + '&gu-headline=' + encodeURIComponent(data.title) + '&gu-trailText=' + encodeURIComponent(data.description);
+            var target = document.getElementsByClassName(type)[0];
+            target.innerHTML = path;
+            target.setAttribute('href', path);
+        }
+    </script>
+</body>
+</html>
