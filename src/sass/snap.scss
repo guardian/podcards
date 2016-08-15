@@ -140,16 +140,17 @@ $mq-breakpoints: (
 
         .fc-slice__item {
             width: 50%;
-            float: left;
+            display: flex;
         }
 
         .fc-item {
             background-color: transparent;
-            height: 100%;
+            height: auto;
+            display: flex;
         }
 
         .handle__card {
-            height: 100%;
+            display: flex;
         }
 
         .handle__title,
