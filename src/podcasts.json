@@ -17,13 +17,13 @@
     },
     {
         "title": "politics for humans",
-        "description": "Politics for humans helps translate headline news into thoughtful, people based conversations",
-        "shortDescription": "Headline news translated for people",
-        "url": "https://www.theguardian.com/politics/series/politics-for-humans",
+        "description": "Sabrina Siddiqui helps translate headline news into thoughtful, people based conversations",
+        "shortDescription": "Sabrina Siddiqui talks politics with people in",
+        "url": "https://www.theguardian.com/us-news/series/politics-for-humans",
         "subscribe": {
             "itunes": "https://itunes.apple.com/us/podcast/politics-for-humans/id1142196506?mt=2",
             "soundcloud": "https://soundcloud.com/politics-for-humans-guardian-us",
-            "rss": "https://www.theguardian.com/politics/series/politics-for-humans/podcast.xml"
+            "rss": "https://www.theguardian.com/us-news/series/politics-for-humans/podcast.xml"
         },
         "backgroundColor": "#204583",
         "accentColour": "#e7b3c3",
