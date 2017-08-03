@@ -1,4 +1,4 @@
-[  
+[
     {
         "title": "what would a feminist do?",
         "description": "The Guardian's Jessica Valenti brings you interviews, advice and real life stories from the front lines of feminism",
@@ -43,7 +43,7 @@
         },
         "backgroundColor": "#a7c91a",
         "accentColour": "#333",
-        "illustration": "football-weekly.jpg",
+        "illustration": "football-weekly.svg",
         "handle": "football-weekly"
     },
     {
