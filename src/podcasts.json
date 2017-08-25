@@ -5,7 +5,7 @@
         "shortDescription": "Reports from the feminist front line",
         "url": "https://www.theguardian.com/commentisfree/series/what-would-a-feminist-do",
         "subscribe": {
-            "iTunes": "https://itunes.apple.com/us/podcast/what-would-a-feminist-do/id1094777126?mt=2",
+            "Apple Podcasts": "https://itunes.apple.com/us/podcast/what-would-a-feminist-do/id1094777126?mt=2",
             "Stitcher": "http://www.stitcher.com/podcast/guardianuk/what-would-a-feminist-do",
             "Soundcloud": "https://soundcloud.com/the_guardians_what_would_a_feminist_do",
             "RSS Feed": "https://www.theguardian.com/commentisfree/series/what-would-a-feminist-do/podcast.xml"
@@ -21,7 +21,7 @@
         "shortDescription": "Sabrina Siddiqui talks politics with people in",
         "url": "https://www.theguardian.com/us-news/series/politics-for-humans",
         "subscribe": {
-            "itunes": "https://itunes.apple.com/us/podcast/politics-for-humans/id1142196506?mt=2",
+            "apple podcasts": "https://itunes.apple.com/us/podcast/politics-for-humans/id1142196506?mt=2",
             "soundcloud": "https://soundcloud.com/politics-for-humans-guardian-us",
             "rss": "https://www.theguardian.com/us-news/series/politics-for-humans/podcast.xml"
         },
@@ -32,11 +32,12 @@
     },
     {
         "title": "football weekly",
-        "description": "The pod squad bring you puns and punditry from the world of Football",
-        "shortDescription": "Puns and pundrity from the world of Football",
+        "description": "The pod squad bring you wit and wisdom on the world of football",
+        "shortDescription": "Wit and wisdom on the world of football",
         "url": "https://www.theguardian.com/football/series/footballweekly",
         "subscribe": {
-            "itunes": "https://itunes.apple.com/us/podcast/football-weekly/id188674007?mt=2",
+            "apple podcasts": "https://itunes.apple.com/us/podcast/football-weekly/id188674007?mt=2",
+            "acast": "https://www.acast.com/footballweekly",
             "stitcher": "http://www.stitcher.com/podcast/guardianuk/football-weekly",
             "soundcloud": "https://soundcloud.com/guardianfootballweekly",
             "rss": "https://www.theguardian.com/football/series/footballweekly/podcast.xml"
@@ -52,7 +53,7 @@
         "shortDescription": "Everything Game of Thrones",
         "url": "https://www.theguardian.com/tv-and-radio/series/game-of-thrones-the-citadel-podcast",
         "subscribe": {
-            "itunes": "https://itunes.apple.com/us/podcast/the-citadel/id1106867070?mt=2",
+            "apple podcasts": "https://itunes.apple.com/us/podcast/the-citadel/id1106867070?mt=2",
             "stitcher": "http://www.stitcher.com/podcast/guardianuk/the-citadel",
             "soundcloud": "https://soundcloud.com/game_of_thrones_citadel",
             "rss": "https://www.theguardian.com/tv-and-radio/series/game-of-thrones-the-citadel-podcast/podcast.xml"
@@ -68,7 +69,7 @@
         "shortDescription": "Learn about the big discoveries and debates",
         "url": "https://www.theguardian.com/science/series/science",
         "subscribe": {
-            "itunes": "https://itunes.apple.com/podcast/science-weekly/id136697669?mt=2",
+            "apple podcasts": "https://itunes.apple.com/podcast/science-weekly/id136697669?mt=2",
             "stitcher": "http://www.stitcher.com/podcast/guardianuk/science-weekly",
             "soundcloud": "https://soundcloud.com/guardianscienceweekly",
             "rss": "https://www.theguardian.com/science/series/science/podcast.xml"
