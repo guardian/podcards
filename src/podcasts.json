@@ -31,9 +31,9 @@
         "handle": "politics-for-humans"
     },
     {
-        "title": "football weekly",
-        "description": "The pod squad bring you puns and punditry from the world of Football",
-        "shortDescription": "Puns and pundrity from the world of Football",
+        "title": "Football Daily",
+        "description": "The Football Weekly pod squad goes daily during the World Cup in its pursuit of puns and punditry",
+        "shortDescription": "Daily puns and pundrity from the World Cup",
         "url": "https://www.theguardian.com/football/series/footballweekly",
         "subscribe": {
             "itunes": "https://itunes.apple.com/us/podcast/football-weekly/id188674007?mt=2",
@@ -41,8 +41,8 @@
             "soundcloud": "https://soundcloud.com/guardianfootballweekly",
             "rss": "https://www.theguardian.com/football/series/footballweekly/podcast.xml"
         },
-        "backgroundColor": "#a7c91a",
-        "accentColour": "#333",
+        "backgroundColor": "#00B2FF",
+        "accentColour": "#121212",
         "illustration": "football-weekly.svg",
         "handle": "football-weekly"
     },

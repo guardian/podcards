@@ -83,13 +83,13 @@ $mq-breakpoints: (
             margin-left: 240px;
         }
     }
-    
+
     .handle__description,
     .handle__title {
         max-width: 460px;
         font-family: "Guardian Egyptian Web","Guardian Text Egyptian Web",Georgia,serif;
     }
-    
+
     .handle__description {
         padding-top: 6px;
         margin-bottom: 2px;
@@ -109,7 +109,7 @@ $mq-breakpoints: (
             }
         }
     }
-    
+
     .handle__title {
         font-weight: 900;
         font-size: 28px;
@@ -120,7 +120,7 @@ $mq-breakpoints: (
             font-size: 48px;
         }
     }
-    
+
     .handle__button-label {
         display: block;
         margin-bottom: 6px;
@@ -131,7 +131,7 @@ $mq-breakpoints: (
             margin-right: 4px;
         }
     }
-    
+
     .handle__buttons {
         list-style: none;
         font-family: "Guardian Text Sans Web","Helvetica Neue",Helvetica,Arial,"Lucida Grande",sans-serif;
@@ -166,9 +166,9 @@ $mq-breakpoints: (
             margin-left: 240px;
         }
     }
-    
+
     .handle__button {
-        background-color: #fb0;
+        background-color: #FFE500;
         color: #333;
         padding: 9px 12px 7px;
         border-radius: 20px;
@@ -182,7 +182,7 @@ $mq-breakpoints: (
         text-decoration: none;
 
         .handle__button {
-            background-color: darken(#fb0, 5%);
+            background-color: darken(#FFE500, 5%);
         }
     }
 }
