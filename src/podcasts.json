@@ -13,7 +13,8 @@
         "backgroundColor": "#104274",
         "accentColour": "#aad8f1",
         "illustration": "what-would-a-feminist-do.svg",
-        "handle": "what-would-a-feminist-do"
+        "handle": "what-would-a-feminist-do",
+        "designVersion": "1"
     },
     {
         "title": "politics for humans",
@@ -28,12 +29,13 @@
         "backgroundColor": "#204583",
         "accentColour": "#e7b3c3",
         "illustration": "politics-for-humans.svg",
-        "handle": "politics-for-humans"
+        "handle": "politics-for-humans",
+        "designVersion": "1"
     },
     {
-        "title": "Football Daily",
-        "description": "The Football Weekly pod squad goes daily during the World Cup in its pursuit of puns and punditry",
-        "shortDescription": "Daily puns and pundrity from the World Cup",
+        "title": "Football Weekly",
+        "description": "Join Max Rushden and the pod squad as they pick over the latest action and news",
+        "shortDescription": "The lastest news and action",
         "url": "https://www.theguardian.com/football/series/footballweekly",
         "subscribe": {
             "itunes": "https://itunes.apple.com/us/podcast/football-weekly/id188674007?mt=2",
@@ -44,7 +46,8 @@
         "backgroundColor": "#00B2FF",
         "accentColour": "#121212",
         "illustration": "football-weekly.svg",
-        "handle": "football-weekly"
+        "handle": "football-weekly",
+        "designVersion": "1"
     },
     {
         "title": "the citadel",
@@ -60,7 +63,8 @@
         "backgroundColor": "#222",
         "accentColour": "#fb0",
         "illustration": "the-citadel.svg",
-        "handle": "the-citadel"
+        "handle": "the-citadel",
+        "designVersion": "1"
     },
     {
         "title": "science weekly",
@@ -76,6 +80,23 @@
         "backgroundColor": "#2274b2",
         "accentColour": "#a9d7f0",
         "illustration": "science-weekly.svg",
-        "handle": "science-weekly"
+        "handle": "science-weekly",
+        "designVersion": "1"
+    },
+    {
+        "title": "the start",
+        "description": "The Start is a podcast about artistic beginnings, as told by great artists of our time",
+        "shortDescription": "​The Start is a podcast about artistic beginnings.",
+        "url": "https://www.theguardian.com/culture/series/thestart",
+        "subscribe": {
+            "itunes": "https://itunes.apple.com/us/podcast/id1337773497",
+            "spotify": "https://open.spotify.com/show/1Y95YPvBTyQTLxTNQalQcZ",
+            "google": "https://www.google.com/podcasts?feed=aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4uY29tL2N1bHR1cmUvc2VyaWVzL3RoZXN0YXJ0L3BvZGNhc3QueG1s"
+        },
+        "backgroundColor": "#2274b2",
+        "accentColour": "#a9d7f0",
+        "illustration": "the-start.png",
+        "handle": "the-start",
+        "designVersion": "2"
     }
 ]
