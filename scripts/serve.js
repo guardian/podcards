@@ -10,10 +10,13 @@ var file = new static.Server('./build', {
     }
 });
 
-console.log("serving");
+console.log("serving on localhost:" + config.local.port);
 
 require('http').createServer(function (request, response) {
     request.addListener('end', function () {
         file.serve(request, response);
     }).resume();
 }).listen(config.local.port);
+
+
+
