@@ -110,6 +110,14 @@
         <h2>Podcard <span>snap</span></h2>
         <a class="snap"></a>
 
+        <h2>Preview a thrasher</h2>
+        <ul>
+            {{#each this}}
+                <li><a href="/preview/{{handle}}.html" target="_blank">{{ handle }}</a></li>
+            {{/each}}
+        </ul>
+
+
     </main>
 
     <footer>
@@ -131,14 +139,14 @@
             insertPath('snap', data);
         }
 
-        getPathValues();
-
         function insertPath(type, data) {
             var path = data.url + '?gu-snapType=json.html&gu-snapUri=' + encodeURIComponent('https://interactive.guim.co.uk/podcards/' + type + "/" + data.handle + '/source.json') + '&gu-headline=' + encodeURIComponent(data.title) + '&gu-trailText=' + encodeURIComponent(data.description);
             var target = document.getElementsByClassName(type)[0];
             target.innerHTML = path;
             target.setAttribute('href', path);
         }
+
+        getPathValues();
     </script>
 </body>
 </html>

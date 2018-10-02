@@ -23,5 +23,12 @@ console.log('Local Url '.bold.yellow + returnPath('local', 'snap'));
 console.log('Remote Url '.bold.green + returnPath('remote', 'snap'));
 
 function returnPath(env, type) {
-    return podcasts[selectedPodcast].url + '?gu-snapType=json.html&gu-snapUri=' + encodeURIComponent(config[env].url + (env == 'local' ? ":" + config.local.port : "/" + config.remote.path) + "/" + type + "/" + podcasts[selectedPodcast].handle + '/source.json') + '&gu-headline=' + encodeURIComponent(podcasts[selectedPodcast].title) + '&gu-trailText=' + encodeURIComponent(podcasts[selectedPodcast].description);
+    return (
+      podcasts[selectedPodcast].url + '?gu-snapType=json.html&gu-snapUri='
+      + encodeURIComponent(config[env].url + (env == 'local' ? ":" + config.local.port : "/" + config.remote.path)
+      + "/" + type + "/"
+      + podcasts[selectedPodcast].handle + '/source.json')
+      + '&gu-headline=' + encodeURIComponent(podcasts[selectedPodcast].title)
+      + '&gu-trailText=' + encodeURIComponent(podcasts[selectedPodcast].description)
+    )
 }
