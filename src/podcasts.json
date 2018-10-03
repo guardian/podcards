@@ -84,17 +84,17 @@
         "designVersion": "1"
     },
     {
-        "title": "the start",
-        "description": "The Start is a podcast about artistic beginnings, as told by great artists of our time",
+        "title": "The Start",
+        "description": "The Start is a podcast about artistic beginnings, as told by great artists of our time. Focussing on one piece; they share how these early moments of creativity shaped them",
         "shortDescription": "​The Start is a podcast about artistic beginnings.",
         "url": "https://www.theguardian.com/culture/series/thestart",
         "subscribe": {
-            "itunes": "https://itunes.apple.com/us/podcast/id1337773497",
-            "spotify": "https://open.spotify.com/show/1Y95YPvBTyQTLxTNQalQcZ",
-            "google": "https://www.google.com/podcasts?feed=aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4uY29tL2N1bHR1cmUvc2VyaWVzL3RoZXN0YXJ0L3BvZGNhc3QueG1s"
+            "apple-podcast": "https://itunes.apple.com/us/podcast/id1337773497",
+            "google-podcast": "https://www.google.com/podcasts?feed=aHR0cHM6Ly93d3cudGhlZ3VhcmRpYW4uY29tL2N1bHR1cmUvc2VyaWVzL3RoZXN0YXJ0L3BvZGNhc3QueG1s",
+            "spotify": "https://open.spotify.com/show/1Y95YPvBTyQTLxTNQalQcZ"
         },
-        "backgroundColor": "#2274b2",
-        "accentColour": "#a9d7f0",
+        "backgroundColor": "#fbcdd6",
+        "accentColour": "#3a3a3a",
         "illustration": "the-start.png",
         "handle": "the-start",
         "designVersion": "2"
