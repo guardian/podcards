@@ -1,0 +1,34 @@
+<div class="{{ handle }}__thrasher">
+    <style>
+        #{{ handle }},
+        #{{ handle }} .fc-item {
+        background-color: {{ backgroundColor }};
+        }
+        .{{ handle }}__thrasher .{{ handle }}__artwork {
+                                                 background-image: url('https://interactive.guim.co.uk/podcards/illustrations/{{ illustration }}');
+                                             }
+        .{{ handle }}__thrasher .{{ handle }}__description {
+        color: {{ accentColour }};
+        }
+        {{{ css }}}
+    </style>
+    <div class="{{ handle }}__artwork">
+        <div class="{{ handle }}__content">
+            <h1 class="{{ handle }}__title">{{ title }}</h1>
+            <p class="{{ handle }}__description">
+                <span class="regular-description">{{ description }}</span>
+                <span class="short-description">{{ shortDescription }}</span>
+            </p>
+        </div>
+    </div>
+    <ul class="{{ handle }}__buttons">
+        <p class="{{ handle }}__subscribe-label">Subscribe for free</p>
+        {{#each subscribe}}
+        <a class="{{ ../handle }}__link" href="{{ this }}" target="_blank" data-link="podcast-subscribe">
+            <li class="{{ ../handle }}__button {{ ../handle }}__button--{{ @key }}">
+                <span class="text">{{ makeTitle @key }}</span>
+            </li>
+        </a>
+        {{/each}}
+    </ul>
+</div>

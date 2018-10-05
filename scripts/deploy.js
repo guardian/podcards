@@ -26,6 +26,7 @@ var chalk = require( 'chalk' );
 var config = require( './config.json' );
 
 var BASE_DIR = path.resolve( 'build' );
+var FILES_TO_IGNORE = ['preview/*'];
 var MAX_CONCURRENT_UPLOADS = 8;
 
 try {
@@ -45,7 +46,8 @@ var uploadQueue = [];
 thingsToUpload.forEach( function ( thing ) {
 	var files = glob.sync( thing.files, {
 		cwd: BASE_DIR,
-		nodir: true
+		nodir: true,
+		ignore: FILES_TO_IGNORE
 	});
 
 	files.forEach( function ( file ) {
